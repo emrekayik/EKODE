@@ -47,3 +47,4 @@ python main.py
 - [ ] Nesne tabanlı yazmak
 
 ## Örnek çıktı
+![Çıktı](./output.png)
