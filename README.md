@@ -58,6 +58,7 @@ python main.py
 
 - [ ] Tüm ASCII karakterleri için çalışmasını sağlamak
 - [ ] Nesne tabanlı yazmak
+- [ ] Çıktı metnini birleştirmek
 
 ## Örnek çıktı
 ![Çıktı](./output.png)

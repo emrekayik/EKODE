@@ -39,6 +39,36 @@ def EKODE(text):
     # Resmi kaydetme
     image.save("output.png")
 
+# Resmi Çözümleyen Fonksiyon
+def EKODEdecrypt(image,text_length):
+  # Resmi aç
+  image = Image.open(image)
+  # Çözümlenirken verilecek çıktı
+  metinCiktisi = []
+  for i in range(len(text_length)):
+    # RGB to HSL
+    # # Pikselin RGB kodunu alın
+    r, g, b = image.getpixel((20+i*40,20))
+    # RGB kodunu HSL koduna dönüştürün
+    hue = rgb2hue(r, g, b)
+    # Hue kodunu al
+    # (360 / 43) * (i - 48) Tersini al
+    deger = (43 * (hue / 360)) + 48
+    metinCiktisi.append(chr(round(deger)))
+  return metinCiktisi
+
+def rgb2hue(r,g,b):
+    # RGB kodunu 0-1 aralığına dönüştürün
+    r_norm, g_norm, b_norm = r/255, g/255, b/255
+    # RGB kodunu HSL koduna dönüştürün
+    h, l, s = colorsys.rgb_to_hls(r_norm, g_norm, b_norm)
+    # Hue değerini grad olarak yazdırın
+    hue = round(h * 360)
+    return hue
+
+
 text = "EMRE"
 EKODE(text)
+
+print(EKODEdecrypt("output.png",text))
 
