@@ -41,4 +41,9 @@ python main.py
 
 5. Program başladıktan sonra "output.png" adlı bir resim dosyası oluşturulur.
 
+## Yapılacaklar:
+
+- [ ] Tüm ASCII karakterleri için çalışmasını sağlamak
+- [ ] Nesne tabanlı yazmak
+
 ## Örnek çıktı
