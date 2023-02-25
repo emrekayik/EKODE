@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw, ImageColor
+from PIL import Image, ImageDraw
 import colorsys
 
 # Metni Şifreleyen Fonksiyon
