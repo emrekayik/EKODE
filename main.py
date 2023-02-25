@@ -1,3 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# EKODE
+"""
+    EKODE
+    EKODE, metni resim üzerinde saklamak için kullanılan bir algoritmadır.
+
+    Geliştirici: Emre Kayık
+    E-posta: emrekayik1905@gmail.com
+    Sürüm: 0.0.2
+    Durum: Geliştirme
+    Lisans: MIT
+    Kaynak:
+        https://en.wikipedia.org/wiki/Hue
+        https://docs.python.org/3/library/colorsys.html
+        https://pillow.readthedocs.io/en/stable/reference/index.html
+        
+"""
+
 from PIL import Image, ImageDraw
 import colorsys
 

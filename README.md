@@ -28,7 +28,9 @@ $$\mathbf{hue} = (\frac{360}{43}) \times (\text{ASCII KODU}-48)$$
 ```css
 hsl(hue, 100%, 50%)
 ```
-sonrasında bu kodla gelen renklerle kareleri dolduruyorum.
+sonrasında bu kodla gelen renklerle kareleri dolduruyorum.\
+
+Çözümlemek için ise fonksiyonun tersini aldım.
 
 ## Kullanım
 
@@ -60,5 +62,12 @@ python main.py
 - [ ] Nesne tabanlı yazmak
 - [ ] Çıktı metnini birleştirmek
 
+## Kaynaklarım:
+- [Wikipedia Hue](https://en.wikipedia.org/wiki/Hue)
+- [Colorsys](https://docs.python.org/3/library/colorsys.html)
+- [Pillow Documents](https://pillow.readthedocs.io/en/stable/reference/index.html)
+- [rapidtables.com rgb-to-hsl](https://www.rapidtables.com/convert/color/rgb-to-hsl.html)
+
 ## Örnek çıktı
 ![Çıktı](./output.png)
+['E', 'M', 'R', 'E']
